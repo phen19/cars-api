@@ -1,6 +1,8 @@
 package com.exercicio.cars.model;
 
 
+import java.util.Date;
+
 import com.exercicio.cars.dto.CarDTO;
 
 import jakarta.persistence.Column;
@@ -35,7 +37,7 @@ public class Car {
     private String fabricante;
 
     @Column(length = 10, nullable = false)
-    private String dataFabricacao;
+    private Date dataFabricacao;
 
     @Column(length = 50, nullable = false)
     private double valor;
